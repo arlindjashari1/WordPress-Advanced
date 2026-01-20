@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <rect x="120" y="80" width="160" height="120" rx="10" fill="#8b4513"/>
+  <rect x="125" y="85" width="150" height="30" fill="#a0522d"/>
+  <rect x="125" y="120" width="150" height="30" fill="#8b4513"/>
+  <rect x="125" y="155" width="150" height="25" fill="#a0522d"/>
+  <circle cx="200" cy="85" r="6" fill="#d4af37"/>
+  <circle cx="160" cy="85" r="5" fill="#ff69b4"/>
+  <circle cx="240" cy="85" r="5" fill="#ff69b4"/>
+  <circle cx="180" cy="85" r="4" fill="#d4af37"/>
+  <circle cx="220" cy="85" r="4" fill="#d4af37"/>
+  <text x="200" y="250" font-size="24" text-anchor="middle" font-family="Arial" fill="#333">Chocolate Cake</text>
+  <text x="200" y="280" font-size="12" text-anchor="middle" font-family="Arial" fill="#666">Rich and decadent with cream</text>
+</svg>

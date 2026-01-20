@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <circle cx="100" cy="80" r="25" fill="#d4a574"/>
+  <circle cx="130" cy="85" r="20" fill="#d4a574"/>
+  <circle cx="160" cy="80" r="22" fill="#d4a574"/>
+  <circle cx="190" cy="85" r="20" fill="#d4a574"/>
+  <circle cx="220" cy="80" r="23" fill="#d4a574"/>
+  <ellipse cx="110" cy="75" rx="15" ry="8" fill="#ff6b6b"/>
+  <ellipse cx="140" cy="78" rx="12" ry="7" fill="#ff6b6b"/>
+  <ellipse cx="170" cy="72" rx="14" ry="8" fill="#ff6b6b"/>
+  <ellipse cx="200" cy="78" rx="12" ry="7" fill="#ff6b6b"/>
+  <ellipse cx="230" cy="72" rx="15" ry="8" fill="#ff6b6b"/>
+  <text x="200" y="250" font-size="24" text-anchor="middle" font-family="Arial" fill="#333">Bruschetta</text>
+  <text x="200" y="280" font-size="12" text-anchor="middle" font-family="Arial" fill="#666">Crispy toasted bread with tomatoes</text>
+</svg>

@@ -1,0 +1,257 @@
+/* ========================================
+   FOOTER AND HEADER STYLES
+   ======================================== */
+
+/* Header Styles */
+.site-header {
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.site-branding img {
+    max-height: 60px;
+    width: auto;
+}
+
+.site-info h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.site-info h1 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-info h1 a:hover {
+    color: #d4af37;
+}
+
+.site-description {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Navigation Menu */
+.main-navigation {
+    flex-grow: 1;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.main-navigation a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.main-navigation a:hover,
+.main-navigation a.current-menu-item {
+    color: #d4af37;
+}
+
+.main-navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: width 0.3s ease;
+}
+
+.main-navigation a:hover::after,
+.main-navigation a.current-menu-item::after {
+    width: 100%;
+}
+
+/* Footer Styles */
+.site-footer {
+    background: #2c2c2c;
+    color: #f0f0f0;
+    padding: 60px 0 20px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    color: #f0f0f0;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: #d4af37;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.footer-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section h3 img {
+    max-height: 40px;
+    width: auto;
+}
+
+.footer-section p {
+    line-height: 1.8;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #e8c547;
+    text-decoration: underline;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin: 8px 0;
+}
+
+.footer-menu a {
+    color: #ccc;
+}
+
+.footer-menu a:hover {
+    color: #d4af37;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* Main Site Container */
+.site-main {
+    min-height: calc(100vh - 200px);
+}
+
+/* Contact Info in Footer */
+.restaurant-contact {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.restaurant-hours {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border-left: 3px solid #d4af37;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .main-navigation ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Restaurant Info Widget */
+.restaurant-info-widget {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #d4af37;
+    margin: 20px 0;
+}
+
+.restaurant-info-widget h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.restaurant-info-widget p {
+    color: #666;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.restaurant-info-widget a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.restaurant-info-widget a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+includes:
+  - phar://phpstan.phar/conf/config.level8.neon
+
+parameters:
+  level: 5
+  paths:
+    - .
+  excludePaths:
+    - */node_modules/*
+    - */vendor/*
+  ignoreErrors:
+    - '#Undefined function (wp_|get_|add_|register_|update_|the_|have_|post_|esc_|sanitize_|do_)#'
+  bootstrapFiles:
+    - wp-bootstrap.php

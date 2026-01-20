@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme">
+    <description>WordPress Theme Coding Standards</description>
+    
+    <!-- Exclude node_modules and vendor -->
+    <exclude-pattern>/vendor/</exclude-pattern>
+    <exclude-pattern>/node_modules/</exclude-pattern>
+    
+    <!-- Use WordPress standards -->
+    <rule ref="WordPress"/>
+    
+    <!-- Exclude some rules that are too strict for themes -->
+    <rule ref="WordPress.DB.SlowDBQuery">
+        <properties>
+            <property name="threshold" value="0.05"/>
+        </properties>
+    </rule>
+    
+    <!-- Allow WordPress functions without checking -->
+    <rule ref="WordPress.NamingConventions.ValidFunctionName">
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
+</ruleset>

@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<div style="text-aling:center">
+<div style="text-align:center">
 
 
     <span class=" dot" onclick="currentSlide(1)"> </span>
@@ -96,16 +96,12 @@
                         'post_per_page' => 5,
                         'category__in' => array(9,10,15),
                         'category__not_in' => array(1)
-                      )
-
+                      );
 
                       $postlist = new WP_Query($args);
 
-
-                        if($postlist ->have_posts()):
-
-
-                         while(  $postlist ->  have_post();):  $postlist ->  the_post();
+                        if($postlist->have_posts()):
+                         while($postlist->have_posts()): $postlist->the_post();
                          get_template_part('parts/content', 'latest-news');
                         endwhile;
                         wp_reset_postdata();

@@ -1,0 +1,12 @@
+{
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "php.validate.enable": true,
+  "php.validate.run": "onSave",
+  "php.suggest.basic": true,
+  "[php]": {
+    "editor.defaultFormatter": "felixbecker.php-intellisense",
+    "editor.formatOnSave": false
+  },
+  "editor.inlayHints.enabled": false,
+  "inlayHints.enabled": false
+}

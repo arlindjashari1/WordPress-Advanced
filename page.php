@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="page-item">
                     <?php 
-                    while (have_posts() ) : the_posts();
+                    while (have_posts() ) : the_post();
                     get_template_part( 'parts/content', 'page');
 
 
