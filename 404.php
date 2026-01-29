@@ -16,7 +16,7 @@
                             <?php
                              the_widget( 
                                 'WP_Widget_Recent_Posts'
-                                array(
+                                 array (
                                     'title' => 'Latest Posts',
                                     'number' => 3
                                 )
